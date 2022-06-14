@@ -1,0 +1,27 @@
+{
+    "name": "MyOshi",
+    "description": "MyOshi takes you from Vtuber's page to his/her membership-only video list.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [ 
+        "tabs"
+     ],
+     "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/assets/ema-16.png",
+            "32": "/assets/ema-32.png",
+            "48": "/assets/ema-48.png",
+            "128": "/assets/ema-128.png"
+          }
+        },
+    "icons": {
+        "16": "/assets/ema-16.png",
+        "32": "/assets/ema-32.png",
+        "48": "/assets/ema-48.png",
+        "128": "/assets/ema-128.png"
+    }
+}
