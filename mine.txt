@@ -1,0 +1,69 @@
+// ---------------------OLD CODE
+// const mainPagePrefix = "https://www.youtube.com/channel/UC"
+// const memberPagePrefix = "https://www.youtube.com/playlist?list=UUMO"
+
+// let changeURL = document.getElementById("changeURL");
+
+// var activeTabId;
+// chrome.tabs.onActivated.addListener(function(activeInfo) {
+//     activeTabId = activeInfo.tabId;
+// });
+
+// changeURL.addEventListener("click", async () => {
+
+//     chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+//         let url = tabs[0].url;
+//         console.log(url);
+
+//         url = jquery('meta[property="fb:app_id"]').attr("content");
+//         console.log(url);
+
+//         if (url.startsWith(mainPagePrefix)) {
+
+//             url = url.slice(mainPagePrefix.length).split('/')[0];
+
+//             chrome.tabs.update({ url: memberPagePrefix.concat(url) });
+
+//             window.close();
+//         }
+//         else {
+//             alert("Only support Youtube, at your Oshi's home page.");
+//             window.close();
+//         }
+//     });
+// });
+
+
+
+
+
+/*
+For all youtube homepage, there is an element:
+
+<link rel="canonical" href="https://www.youtube.com/channel/UCvUc0m317LWTTPZoBQV479A">
+
+The original UC-xxxx link can still be found here.
+
+"canonical" <- can be searched uniquely in different tab
+
+This search term is only available on homepage.
+
+
+^ the link doesn't work most of the time
+<meta property="og:url" content="https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg">
+try to grab element
+
+https://stackoverflow.com/questions/7524585/how-do-i-get-the-information-from-a-meta-tag-with-javascript
+https://stackoverflow.com/questions/51885877/chrome-extension-using-document-queryselector-in-background-script
+
+
+UPDATE
+^ 
+actual link in VIDEO PAGE
+<link rel="canonical" href="https://www.youtube.com/watch?v=rAeGT0ME1tQ">
+
+
+Runa
+UUMOD5W21JqNMv_tV9nfjvF9sw
+UCD5W21JqNMv_tV9nfjvF9sw
+*/

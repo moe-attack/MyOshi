@@ -6,22 +6,28 @@
     "background": {
         "service_worker": "background.js"
     },
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["contentScript.js"]
+    }],
     "permissions": [ 
-        "tabs"
+        "tabs",
+        "activeTab",
+        "scripting"
      ],
      "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "/assets/ema-16.png",
-            "32": "/assets/ema-32.png",
-            "48": "/assets/ema-48.png",
-            "128": "/assets/ema-128.png"
+            "16": "/assets/shinomiya-16.jpeg",
+            "32": "/assets/shinomiya-32.jpeg",
+            "48": "/assets/shinomiya-48.jpeg",
+            "128": "/assets/shinomiya-128.jpeg"
           }
         },
     "icons": {
-        "16": "/assets/ema-16.png",
-        "32": "/assets/ema-32.png",
-        "48": "/assets/ema-48.png",
-        "128": "/assets/ema-128.png"
+        "16": "/assets/shinomiya-16.jpeg",
+        "32": "/assets/shinomiya-32.jpeg",
+        "48": "/assets/shinomiya-48.jpeg",
+        "128": "/assets/shinomiya-128.jpeg"
     }
 }
