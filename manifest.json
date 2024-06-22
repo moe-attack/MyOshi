@@ -18,16 +18,16 @@
      "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "/assets/shinomiya-16.jpeg",
-            "32": "/assets/shinomiya-32.jpeg",
-            "48": "/assets/shinomiya-48.jpeg",
-            "128": "/assets/shinomiya-128.jpeg"
+            "16": "/assets/shinomiya-16.png",
+            "32": "/assets/shinomiya-32.png",
+            "48": "/assets/shinomiya-48.png",
+            "128": "/assets/shinomiya-128.png"
           }
         },
     "icons": {
-        "16": "/assets/shinomiya-16.jpeg",
-        "32": "/assets/shinomiya-32.jpeg",
-        "48": "/assets/shinomiya-48.jpeg",
-        "128": "/assets/shinomiya-128.jpeg"
+        "16": "/assets/shinomiya-16.png",
+        "32": "/assets/shinomiya-32.png",
+        "48": "/assets/shinomiya-48.png",
+        "128": "/assets/shinomiya-128.png"
     }
 }
